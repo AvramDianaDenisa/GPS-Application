@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Terminal </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/terminals_add_delete.js"></script>
+    <script src="js/common.js"></script>
+
+    <style>
+        .flexWrap {
+            display: flex;
+        }
+        .admin {
+            background-color: lightgrey;
+            width: 500px;
+            length: 300px;
+            border: 15px solid #b3ffff;
+            padding: 50px;
+            margin: 50px;
+            margin-left: 10%;
+            margin-top: 5px;
+        }
+        .a {
+            border: 2px solid #009999;
+            border-radius: 12px;
+            padding: 5px;
+        }
+        .buton {
+            width: 100%;
+            height: 40px;
+            margin-left: 30%;
+            margin-top: 5px;
+            border: 2px solid #009999;
+            background-color: #b3ffff;
+            border-radius: 12px;
+            padding: 5px;
+        }
+        #add_terminal_button {
+            margin-left: 30%;
+        }
+        #delete_terminal_button {
+            margin-left: 30%;
+        }
+    </style>
+</head>
+<body>
+<div class="flexWrap">
+    <div class="terminal">
+        <h1 align="center">Terminal</h1>
+        <div align="center">
+            <table align="center">
+                <tr>
+                    <td><b>Terminal Id</b></td>
+                    <td><input  type="text" id="terminalId" size="35" class="regular_input"></td>
+                </tr>
+                <tr>
+                    <td><b>Terminal name</b></td>
+                    <td><input type="text" id="terminalName" size="35"></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <input class="buton" type="button" id="add_terminal_button" size="40" value="Add Terminal"
+                               onclick=addTerminal()></td>
+                    <td align="right">
+                        <input class="buton" type="button" id="delete_terminal_button" size="40" value="Delete Terminal"
+                               onclick=deleteTerminal()></td>
+                    <td align="right"><input type="button" name="back" size="35" value="Back"
+                                             onclick=goToPage('index.html')></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

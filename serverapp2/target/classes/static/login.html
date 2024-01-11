@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    .form {
+      background-color: lightgrey;
+      width: 500px;
+      length: 300px;
+      border: 15px solid #b3ffff;
+      padding: 50px;
+      margin: 50px;
+      margin-left: 10%;
+      margin-top: 5px;
+    }
+
+    #buton {
+      height: 40px;
+      margin-top: 5px;
+      border: 2px solid #009999;
+      background-color: #b3ffff;
+      border-radius: 12px;
+      padding: 5px;
+      width: 100px;
+    }
+
+    .a {
+      border: 2px solid #009999;
+      border-radius: 12px;
+      padding: 5px;
+      margin-left: 0px;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="js/login.js"></script>
+</head>
+<body>
+<div class="form">
+  <h1 align="center">Log-in</h1>
+
+  <div id align="center">
+    <table align="center">
+      <tr>
+        <td><b>Username</b></td>
+        <td><input  type="text" id="username"  size="35" class="regular_input"></td>
+      </tr>
+      <tr>
+        <td><b>Password</b></td>
+        <td><input  type="password" id="password"  size="35"></td>
+      </tr>
+
+      <tr>
+        <td><br></td>
+        <td><br></td>
+      </tr>
+      <tr>
+        <td><input id="buton" type="button" size="40" value="Login" onclick=loginAccont()></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="result" align="center">
+  </div>
+</div>
+</body>
+</html>
